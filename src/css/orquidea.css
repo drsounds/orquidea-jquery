@@ -1,0 +1,69 @@
+.orquidea-song {
+	font-size: 13px;
+	font-family: 'Tahoma';
+	width: 100%;
+	border-collapse: collapse;
+	user-select: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	user-drag: none;
+}
+table.orquidea-songlist {
+	border-collapse: collapse;
+}
+.orquidea-song:nth-child(2n) {
+}
+.orquidea-song table {
+	border-collapse: collapse;
+}
+.orquidea-song td#player {
+	padding: 0px;
+}
+.orquidea-tracklist {
+	border: 1px solid rgba(127, 127, 127, 1);
+	background-color: #fafafa;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.orquidea-tracklist th {
+	background-color: #f0f0f0;
+}
+.orquidea-song a {
+	color: #444;
+}
+.orquidea-song td, .orquidea-tracklist th {
+	min-height: 11px;
+	padding: 4px 0px;
+	color: #333;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.orquidea-song-play {
+	background-color: rgba(0, 0, 0, 0.75);
+	color: rgba(233, 255, 233, 0.75);
+}
+.orquidea-song-play a {
+	color: rgba(211, 255, 211, 1);
+}
+a#artist {
+	opacity: 0.90;
+}
+.ac-error {
+	background-color: rgba(255, 244, 244, 0.1);
+	content: 'Error';
+}
+
+.orquidea-song:hover a {
+	color: auto;
+
+}
+.orquidea-song:hover {
+	background-color: rgba(0, 0, 0, .10);
+
+}
+.orquidea-song-selected, .orquidea-song-selected:hover  {
+	background-color: #aacc88;
+	color: white;
+}
+.orquidea-song-selected a, .orquidea-song-selected:hover a {
+	color: white;
+}
