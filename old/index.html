@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Orquidea : Music framework for HTML5" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Orquidea</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/drsounds/orquidea-jquery">View on GitHub</a>
+
+          <h1 id="project_title">Orquidea</h1>
+          <h2 id="project_tagline">Music framework for HTML5</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/drsounds/orquidea-jquery/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/drsounds/orquidea-jquery/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="orquidea-jquery-distribution" class="anchor" href="#orquidea-jquery-distribution"><span class="octicon octicon-link"></span></a>Orquidea jQuery distribution</h1>
+
+<p>Work in progress.</p>
+
+<p>Orquidea is jQuery (also web components) based framework that I started working on at my last day at Orquidea, Gran Canaria. It’s a library that should allow people to stitch embed on their web pages with a general query system, and if there is multiple entries embedded, all the content will be stitched together to a whole playlist, regardless of what music service used for playing the songs. Orquidea will lookup a matching music service for any entry, according to a special music URI scheme which Orquidea converts to a query.</p>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h2>
+
+<p>Pull this project and copy the orquidea.js to your js folder and orquidea.css to your css folder. Then add links as usual to these files, you know how. Don't forget to make sure jQuery is included as well.</p>
+
+<p>Then add the music elements to the page</p>
+
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        ...
+        &lt;link rel="path/to/orquidea.css" type="text/css" /&gt;
+        &lt;script src="path/to/orquidea.js" type="text/JavaScript"&gt;&lt;/script&gt;
+        ...
+    &lt;/head&gt;
+    &lt;body&gt;
+        ...
+        &lt;h3&gt;Sample playlist&lt;/h3&gt;
+        &lt;table width="100%" class="orquidea-tracklist"&gt;
+            &lt;thead&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Title&lt;/th&gt;
+                &lt;th&gt;Artist&lt;/th&gt;
+                &lt;th&gt;Duration&lt;/th&gt;
+                &lt;th&gt;Album&lt;/th&gt;
+                &lt;th&gt;Source&lt;/th&gt;
+                &lt;th&gt;&lt;/th&gt;
+
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+                &lt;tr class="orquidea-song" data-uri="music://artist/Daft+Punk/album/Get+Lucky/track/Get+Lucky"&gt;&lt;/tr&gt;
+                &lt;tr class="orquidea-song" data-uri="music://artist/AVICII/album/True/track/True"&gt;&lt;/tr&gt;
+                &lt;tr class="orquidea-song" data-title="Test" data-uri="https://www.youtube.com/watch?v=mN84To5ndw0"&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+        ...
+        &lt;script&gt;
+        $('.orquidea-song').each(function (i) {
+            $(this).orquidea();
+        });
+    &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Before the end of the body, add the following</p>
+
+<pre><code>&lt;script&gt;
+    $('.orquidea-song').each(function (i) {
+        $(this).orquidea();
+    });
+&lt;/script&gt;
+</code></pre>
+
+<p>Then it should make the songs as playlist.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Orquidea maintained by <a href="https://github.com/drsounds">drsounds</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
