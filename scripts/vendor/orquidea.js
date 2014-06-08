@@ -196,10 +196,10 @@ THE SOFTWARE.*/
 	 * checks if the resolver matches the uri
 	 **/
 	GenericResolver.matchesUri = function (uri) {
-		alert("A");
+		//alert("A");
 		var d = uri.match(/^music\:/);
 		if (d) {
-			alert(uri);
+			//alert(uri);
 		}
 		return d;
 	};
@@ -299,7 +299,7 @@ window.onYouTubeIframeAPIReady = function ()
 		 **/
 		load: function (callback, data) {
 			// Direct load from URI
-			alert(this.uri);
+			//alert(this.uri);
 			if (this.uri.indexOf('https://www.youtube.com/watch?') == 0) {
 				
 				var id = this.uri.split(/=/g)[1];
@@ -373,7 +373,7 @@ window.onYouTubeIframeAPIReady = function ()
 		})
 	};
 	YouTubeResolver.matchesUri = function (uri) {
-		alert(uri);
+		//alert(uri);
 		return uri.indexOf('https://www.youtube.com/watch') == 0;
 	}
 	/**
