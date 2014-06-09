@@ -1,4 +1,4 @@
-@primary: #66cc66;
+
 
 #intro {
 	background-color: #333;
@@ -10,10 +10,10 @@
 	background: transparent;
 }
 .shape-primary path {
-	fill: @primary;
+	fill: #66cc66;
 }
 .navbar-green {
-	background-color: @primary;
+	background-color: #66cc66;
 
 }
 .navbar-green a {
