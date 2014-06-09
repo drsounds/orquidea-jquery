@@ -35,6 +35,7 @@ Then add the music elements to the page
 					<tr class="orquidea-song" data-uri="music://artist/Daft+Punk/album/Get+Lucky/track/Get+Lucky"></tr>
 					<tr class="orquidea-song" data-uri="music://artist/AVICII/album/True/track/True"></tr>
 					<tr class="orquidea-song" data-title="Test" data-uri="https://www.youtube.com/watch?v=mN84To5ndw0"></tr>
+					<tr class="orquidea-song" data-title="Test" data-uri="https://www.youtube.com/watch?v=mN84To5ndw0"></tr>
 				</tbody>
 			</table>
 			...
