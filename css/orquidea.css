@@ -5,6 +5,50 @@
 	border-collapse: collapse;
 	
 }
+#btn-play {
+	height: 24px;
+	width: 24px;
+}
+.orquidea-song:hover #btn-play {
+	height: 16px;
+	width: 16px;
+	display: block;
+	background-image: url('../img/play_normal.png');
+	background-size:16px;
+
+}
+.orquidea-song:hover #btn-play:hover {
+	cursor: pointer;
+	background-image: url('../img/play_hover.png');
+}
+
+.orquidea-song-play:hover #btn-play {
+	height: 16px;
+	width: 16px;
+	display: block;
+	background-image: url('../img/pause_normal.png');
+	background-size:16px;
+
+}
+.orquidea-song-play:hover #btn-play:hover {
+	cursor: pointer;
+	background-image: url('../img/pause_hover.png');
+}
+
+.orquidea-song-play-pause:hover #btn-play {
+	height: 16px;
+	width: 16px;
+	display: block;
+	background-image: url('../img/play_normal.png');
+	background-size:16px;
+
+}
+.orquidea-song-play-pause:hover #btn-play:hover {
+	cursor: pointer;
+	background-image: url('../img/play_hover.png');
+}
+
+
 .orquidea-tracklist, .orquidea-song {
 	user-select: none;
 	-webkit-user-select: none;
@@ -42,6 +86,7 @@ table.orquidea-songlist {
 .orquidea-song td, .orquidea-tracklist th {
 	min-height: 11px;
 	padding: 4px 0px;
+	height: 24px;
 	color: #333;
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
