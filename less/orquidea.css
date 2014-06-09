@@ -1,0 +1,35 @@
+@primary: #66cc66;
+
+#intro {
+	background-color: #333;
+	color: white;
+	padding-top: 15%;
+	background-image: url('../img/bg.png');
+}
+.jumbotron {
+	background: transparent;
+}
+.shape-primary path {
+	fill: @primary;
+}
+.navbar-green {
+	background-color: @primary;
+
+}
+.navbar-green a {
+	color: white;
+}
+div.code {
+	display: block;
+	overflow: auto;
+	padding: 20px;
+	height: auto;
+	white-space: pre;
+	font-size: 15px;
+	background-color: #333;
+	color: #eeffee;
+
+}/*
+#intro .orquidea-tracklist td, #intro .orquidea-tracklist th {
+	border-bottom: 1px solid rgba(255, 255, 255, .25);
+}*/
